@@ -1,0 +1,33 @@
+<html>
+
+<title>Explicit Wait Example
+</title>
+
+<input type="button" name=clickShow Value = "Show or Hilde " onClick = "hideBtn();"><p>
+<input type="button" id="b1" name="btnShow" value="Show"><p>
+
+<input type="button"  name=clickEnable Value = "Enable or Disable "><p>
+<input type="button" id="b2" name="btnEnabled" value="Enabled">
+
+<script type="text/javascript">
+
+function sleep(milliseconds) {
+	  var start = new Date().getTime();
+	  for (var i = 0; i < 1e7; i++) {
+	    if (((new Date().getTime() - start)/10) > milliseconds){
+	      break;
+	    }
+	  }
+	}
+	
+function hideBtn()
+{
+	document.getElementById("b1").style.display="none";
+	alert();
+	sleep (5000);
+	document.getElementById("b1").style.display="block";
+
+	}
+</script>
+
+</html>

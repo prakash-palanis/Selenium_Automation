@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Selenium Automation]">
+  <test name="CCBank Verify Title and Buttons(failed)">
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngex.CCBank_VerifyTitleLoginButton">
+        <methods>
+          <include name="testCCBankInitTest"/>
+          <include name="testCCBankFinishTest"/>
+        </methods>
+      </class> <!-- testngex.CCBank_VerifyTitleLoginButton -->
+      <class name="testngex.CCBank_VerifyNewUserButton">
+        <methods>
+          <include name="testCCBank_VerifyNewUserButtonExists"/>
+          <include name="testCCBankFinishTest"/>
+          <include name="testCCBank_VerifyNewUserButtonText"/>
+        </methods>
+      </class> <!-- testngex.CCBank_VerifyNewUserButton -->
+    </classes>
+  </test> <!-- CCBank Verify Title and Buttons(failed) -->
+</suite> <!-- Failed suite [Selenium Automation] -->

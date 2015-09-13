@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Selenium Automation" parallel="false" thread-count="1">
+	<test name="CCBank Verify Title and Buttons">
+		<groups>
+		<define name="all">
+			<include name="PresenceVerification">
+			</include>
+			<include name="TextVerification">
+			</include>
+	</define>
+	<run>
+	<include name="all"></include>
+	</run>		
+		</groups>
+		<classes>
+			<class name="testngex.CCBank_VerifyTitleLoginButton" />
+			<class name="testngex.CCBank_VerifyNewUserButton" />
+		</classes>
+	</test>
+
+	<!-- - <test name="CCBank Verify Create New User Button" > <classes> </classes> 
+		</test> <test name="TestNG_AnnotationsEx" > <classes> <class name="testngex.TestNG_AnnotationsEx" 
+		/> </classes> </test> <test name="TestNG_SkipTestsEx" > <classes> <class 
+		name="testngex.TestNGSkipTCEx" /> </classes> </test> -->
+</suite>
